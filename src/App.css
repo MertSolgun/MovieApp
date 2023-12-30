@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Carattere&family=JetBrains+Mono:wght@100;400&family=Rubik+Scribble&display=swap");
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "JetBrains";
+}
+
+.topMovie {
+  width: 300px;
+}
+.popularMovie {
+  width: 300px;
+}
+
+.topMovie img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.popularMovie img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.movieTitle {
+  background-color: rgba(100, 112, 206, 0.758);
+  text-align: center;
+}
+
+.movieImg {
+  position: relative;
+}
+
+.popularMovie {
+  position: relative;
+}
+
+.moviOver {
+  display: none;
+}
+.popularMovie:hover .moviOver {
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-color: #00000047;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.popularS {
+  margin-left: 70px;
+}
+
+.moviedesc span {
+  font-size: 0.8rem;
+}
+
+.topMovie {
+  position: relative;
+}
+
+.topOver {
+  display: none;
+}
+.topMovie:hover .topOver {
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-color: #00000047;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.topMovieOver span {
+  font-size: 0.8rem;
+}
+
+.loginForm label {
+  padding: 10px;
+}
+
+.movieOver {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  width: 60%;
+  height: 90%;
+  height: auto;
+  margin: auto;
+}
+.movieOver img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+.overViews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: start;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.overViews ul li {
+  margin: 10px;
+}
+
+@media (max-width: 1000px) {
+  .movieOver {
+    grid-template-columns: repeat(1, auto);
+    width: 50%;
+  }
+  .movieOver img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 700px) {
+  .movieOver {
+    grid-template-columns: repeat(1, auto);
+    width: 80%;
+  }
+  .movieOver img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+.dark {
+  color: white;
+  background-color: #161d27;
+}
+.light {
+  color: black !important;
+}
+
+.SearchInput {
+  width: 100%;
+  color: white;
+  border: none !important;
+  border-radius: 30px !important;
+  outline: none !important;
+}
+.SearchInput::placeholder {
+  color: white;
+}
+
+.searchMain {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
+  padding: 4rem;
+  width: 39rem;
+}
+
+.registerForm {
+  width: 29rem;
+}
+
+@media (max-width: 600px) {
+  .loginForm {
+    padding: 4rem;
+    width: 100%;
+  }
+  .navlogo {
+    width: 50px !important;
+  }
+  .navitem {
+    justify-content: center;
+    margin: auto;
+  }
+
+  .registerForm {
+    width: 90%;
+  }
+}
+
+.loading {
+  height: 50vh;
+}
+.navlogo {
+  width: 80px;
+}
